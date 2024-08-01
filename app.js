@@ -4,7 +4,8 @@ const serverHandle = (req, res) => {
 
   const resData = {
     name: 'Jeff-',
-    site: 'frontEnd Learning'
+    site: 'frontEnd Learning',
+    env: process.env.NODE_ENV
   }
 
   res.end(JSON.stringify(resData))
